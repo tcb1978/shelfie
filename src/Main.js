@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import CreateBin from './CreateBin';
+import Shelf from './Shelf';
 import './Main.css';
 import { Route, Link } from 'react-router-dom';
 
@@ -35,13 +36,15 @@ class Main extends Component {
                 <Route path="/" render={() => // render a shelf for each a, b, c, d
                     this.state.shelves.map((e) => ( // map through each shelf and link url and include which shelf name
                         <div className="shelf">
-                            <Link to={`/shelves/${e.name}`}>Shelf {e.name}</Link>
+                            <Link to={`/shelves/${e.name}`}><span>Shelf {e.name}</span></Link>
                         </div>
-                    )
-                )} />
+                    ))} />
+                <Route path="/shelves/:shelfId" render={(props) => <Shelf {...props} name={props.match.params.shelfId} />} />
+                <Route path="/create/:shelfAndBinIds" component={CreateBin} />
             </div>
         );
     }
 }
 
 export default Main;
+

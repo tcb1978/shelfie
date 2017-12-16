@@ -8,8 +8,10 @@ class Header extends Component {
         return (
 
             <header className="App-header">
-                <img src={logo} className="App-logo" alt="logo" />
-                <h1 className="App-title">SHELFIE</h1>
+                <div>
+                    <img src={logo} className="App-logo" alt="logo" />
+                    <h1 className="App-title">SHELFIE</h1>
+                </div>
             </header>
 
         );

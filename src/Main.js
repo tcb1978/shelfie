@@ -31,7 +31,7 @@ class Main extends Component {
 
     render() {
         return (
-            <div>
+            <div className="shelf-container">
                 <Route path="/" render={() => // render a shelf for each a, b, c, d
                     this.state.shelves.map((e) => ( // map through each shelf and link url and include which shelf name
                         <div className="shelf">

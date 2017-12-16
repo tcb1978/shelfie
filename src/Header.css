@@ -1,0 +1,16 @@
+.App-header {
+    background-color: #AB2B19;
+    padding: 10px;
+    color: #FFF;
+    display: flex;
+}
+
+.App-header > div {
+    display: inherit;
+    margin: 0 0 0 24%;
+}
+
+.App-title {
+    font-size: 1.5em;
+    padding: 5px 0 0 10px;
+}

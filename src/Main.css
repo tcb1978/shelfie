@@ -1,0 +1,21 @@
+.shelf-container {
+    display: flex;
+    flex-direction: column;
+    margin: 19px auto;
+}
+
+.shelf {
+    box-sizing: border-box;
+    background: #D35735;
+    margin: 0 25% 20px;
+    padding: 15px 0;
+    border-radius: 5px;
+}
+
+.shelf a {
+    float: left;
+    padding: 0 20%;
+    color: #fff;
+    text-decoration: none;
+    font-size: 25px;
+}
